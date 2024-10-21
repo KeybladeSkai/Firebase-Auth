@@ -7,10 +7,8 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-
 import Login from "./components/login";
 import SignUp from "./components/register";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Profile from "./components/profile";

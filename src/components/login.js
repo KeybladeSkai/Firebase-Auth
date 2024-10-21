@@ -20,7 +20,7 @@ function Login() {
     } catch (error) {
       console.log(error.message);
 
-      toast.error(error.message, {
+      toast.error("Wrong Credentials, try again later", {
         position: "bottom-center",
       });
     }
@@ -33,6 +33,7 @@ function Login() {
       <div className="mb-3">
         <label>Email address</label>
         <input
+          required
           type="email"
           className="form-control"
           placeholder="Enter email"
@@ -44,6 +45,7 @@ function Login() {
       <div className="mb-3">
         <label>Password</label>
         <input
+          required
           type="password"
           className="form-control"
           placeholder="Enter password"
@@ -60,7 +62,7 @@ function Login() {
       <p className="forgot-password text-right">
         New user <a href="/register">Register Here</a>
       </p>
-      <SignInwithGoogle/>
+      <SignInwithGoogle />
     </form>
   );
 }
